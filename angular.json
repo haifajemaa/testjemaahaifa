@@ -6,12 +6,13 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "testhaifajemaa": {
+    "testhaifajemaa": { 
+      
       "projectType": "application",
       "schematics": {},
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "jema",
       "architect": {
         "build": {
           "builder": "@angular/build:application",
