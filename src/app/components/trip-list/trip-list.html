@@ -1,0 +1,13 @@
+<h1>
+    <strong>Liste des voyages</strong>
+</h1>
+<div class="badge text-bg-warning">Nombre de voyages disponibles: {{totalevoyage()}}</div>
+<br>
+@for (voyage of voyages(); track $index) {
+<jema-trip-item [voyage]="voyage"
+(nombreplace)="decremente($event)"
+>
+
+</jema-trip-item>
+}
+

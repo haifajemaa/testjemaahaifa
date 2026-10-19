@@ -1,0 +1,20 @@
+<img [src]="voyage().photo" width="70px" height="70px">
+<span>
+   <span class="badge text-bg-success">
+  {{voyage().destination}}
+   </span> 
+    prix: {{voyage().price}} Dt
+     Duree: {{voyage().nbDays|peroid}}
+    <input type="checkbox" name="" id="" [checked]="voyage().visa">
+    <span class="badge text-bg-secondary"> {{voyage().nbPlaces}} </span>
+    @if(voyage().nbPlaces>0){
+        <button (click)="decrement(voyage().id)">Réserve</button>
+    }
+    @else {
+        **voyage complet**
+    }
+   
+</span>
+Donner le nombre de jours minimun:
+<input type="number" name="" id="" #nb>
+<!-- <button (click)="aff(nb.value)">Afficher</button> -->
